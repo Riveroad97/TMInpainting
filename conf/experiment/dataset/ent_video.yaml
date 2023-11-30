@@ -1,0 +1,41 @@
+# @package _group_
+
+name: ent_video
+collection: 1_key_20
+data_subdir: video_5_1
+root_dir: "${experiment.params.data_dir}/${experiment.dataset.data_subdir}/"
+
+img_wh: [1920, 1080]
+spherical_poses: False
+use_ndc: True
+use_reference: False
+correct_poses: False
+
+# Validation
+val_num: 8
+val_skip: 57
+
+val_all: False
+val_set: [0]
+
+# Video
+start_frame: 0
+num_frames: 301
+keyframe_step: 20
+
+#load_full_step: 4
+#subsample_keyframe_step: 2
+#subsample_keyframe_frac: 0.25
+#subsample_frac: 0.125
+
+# load_full_step: 4
+# subsample_keyframe_step: 2
+# subsample_keyframe_frac: 0.25
+# subsample_frac: 0.125
+
+# Rendering
+render_params:
+  interpolate_time: False
+  interpolate: False
+  supersample: 2
+  crop: 0.85
