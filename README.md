@@ -18,5 +18,4 @@ python main.py experiment/dataset=ent_video.yaml \
     experiment.params.print_loss=True \
     +experiment/regularizers/tensorf=tv_4000 \
     experiment.dataset.val_all=True \
-    experiment.dataset.val_set=[]
 ```
